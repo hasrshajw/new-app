@@ -1,0 +1,139 @@
+.class public final Lokhttp3/internal/http2/Http2Stream$StreamTimeout;
+.super Lle;
+.source "r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lokhttp3/internal/http2/Http2Stream;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x11
+    name = "StreamTimeout"
+.end annotation
+
+
+# instance fields
+.field public final synthetic q:Lokhttp3/internal/http2/Http2Stream;
+
+
+# direct methods
+.method public constructor <init>(Lokhttp3/internal/http2/Http2Stream;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lokhttp3/internal/http2/Http2Stream$StreamTimeout;->q:Lokhttp3/internal/http2/Http2Stream;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lle;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public w(Ljava/io/IOException;)Ljava/io/IOException;
+    .locals 1
+
+    .line 1
+    new-instance p0, Ljava/net/SocketTimeoutException;
+
+    .line 2
+    .line 3
+    const-string v0, "timeout"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Ljava/net/SocketTimeoutException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    if-eqz p1, :cond_0
+
+    .line 9
+    .line 10
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+
+    .line 11
+    .line 12
+    .line 13
+    :cond_0
+    return-object p0
+.end method
+
+.method public y()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lokhttp3/internal/http2/Http2Stream$StreamTimeout;->q:Lokhttp3/internal/http2/Http2Stream;
+
+    .line 2
+    .line 3
+    sget-object v1, Lokhttp3/internal/http2/ErrorCode;->k:Lokhttp3/internal/http2/ErrorCode;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1}, Lokhttp3/internal/http2/Http2Stream;->i(Lokhttp3/internal/http2/ErrorCode;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object p0, p0, Lokhttp3/internal/http2/Http2Stream$StreamTimeout;->q:Lokhttp3/internal/http2/Http2Stream;
+
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Lokhttp3/internal/http2/Http2Stream;->k()Lokhttp3/internal/http2/Http2Connection;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object p0
+
+    .line 14
+    invoke-virtual {p0}, Lokhttp3/internal/http2/Http2Connection;->Z1()V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public final z()V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lle;->v()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    return-void
+
+    .line 8
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 9
+    invoke-virtual {p0, v0}, Lokhttp3/internal/http2/Http2Stream$StreamTimeout;->w(Ljava/io/IOException;)Ljava/io/IOException;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    throw p0
+.end method

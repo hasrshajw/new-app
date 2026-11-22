@@ -1,0 +1,15 @@
+package com.amazon.d.b.a;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes.dex */
+public final class a {
+    public static final boolean a = false;
+    public static final String b = "com.amazon.venezia.kiwi.definitions";
+
+    @Deprecated
+    public static final String c = "com.amazon.venezia.kiwi.definitions";
+    public static final String d = "release";
+    public static final String e = "";
+    public static final int f = 1;
+    public static final String g = "1.0";
+}

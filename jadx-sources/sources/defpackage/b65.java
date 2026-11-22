@@ -1,0 +1,19 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes3.dex */
+public class b65 implements ct {
+    public static b65 a;
+
+    public static b65 a() {
+        if (a == null) {
+            a = new b65();
+        }
+        return a;
+    }
+
+    @Override // defpackage.ct
+    public long b() {
+        return System.currentTimeMillis();
+    }
+}

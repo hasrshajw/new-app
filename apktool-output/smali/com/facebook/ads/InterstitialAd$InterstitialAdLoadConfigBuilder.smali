@@ -1,0 +1,76 @@
+.class public interface abstract Lcom/facebook/ads/InterstitialAd$InterstitialAdLoadConfigBuilder;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213"
+
+# interfaces
+.implements Lcom/facebook/ads/Ad$LoadConfigBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/facebook/ads/InterstitialAd;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "InterstitialAdLoadConfigBuilder"
+.end annotation
+
+
+# virtual methods
+.method public bridge synthetic build()Lcom/facebook/ads/Ad$LoadAdConfig;
+    .locals 0
+
+    .line 1
+    invoke-interface {p0}, Lcom/facebook/ads/InterstitialAd$InterstitialAdLoadConfigBuilder;->build()Lcom/facebook/ads/InterstitialAd$InterstitialLoadAdConfig;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public abstract build()Lcom/facebook/ads/InterstitialAd$InterstitialLoadAdConfig;
+.end method
+
+.method public abstract withAdListener(Lcom/facebook/ads/InterstitialAdListener;)Lcom/facebook/ads/InterstitialAd$InterstitialAdLoadConfigBuilder;
+.end method
+
+.method public bridge synthetic withBid(Ljava/lang/String;)Lcom/facebook/ads/Ad$LoadConfigBuilder;
+    .locals 0
+
+    .line 1
+    invoke-interface {p0, p1}, Lcom/facebook/ads/InterstitialAd$InterstitialAdLoadConfigBuilder;->withBid(Ljava/lang/String;)Lcom/facebook/ads/InterstitialAd$InterstitialAdLoadConfigBuilder;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public abstract withBid(Ljava/lang/String;)Lcom/facebook/ads/InterstitialAd$InterstitialAdLoadConfigBuilder;
+.end method
+
+.method public abstract withCacheFlags(Ljava/util/EnumSet;)Lcom/facebook/ads/InterstitialAd$InterstitialAdLoadConfigBuilder;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/EnumSet<",
+            "Lcom/facebook/ads/CacheFlag;",
+            ">;)",
+            "Lcom/facebook/ads/InterstitialAd$InterstitialAdLoadConfigBuilder;"
+        }
+    .end annotation
+.end method
+
+.method public abstract withRewardData(Lcom/facebook/ads/RewardData;)Lcom/facebook/ads/InterstitialAd$InterstitialAdLoadConfigBuilder;
+.end method
+
+.method public abstract withRewardedAdListener(Lcom/facebook/ads/RewardedAdListener;)Lcom/facebook/ads/InterstitialAd$InterstitialAdLoadConfigBuilder;
+.end method

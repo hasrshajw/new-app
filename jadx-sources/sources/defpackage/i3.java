@@ -1,0 +1,12 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes3.dex */
+public abstract class i3 extends j3 {
+    @Override // defpackage.j3
+    public String a() {
+        return super.a();
+    }
+
+    public abstract String b();
+}

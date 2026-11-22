@@ -1,0 +1,36 @@
+.class public final Li1b;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213"
+
+
+# instance fields
+.field public a:I
+
+.field public b:J
+
+.field public c:Ljava/lang/Object;
+
+.field public final d:Lhqb;
+
+
+# direct methods
+.method public constructor <init>(Lhqb;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Li1b;->d:Lhqb;
+
+    .line 8
+    .line 9
+    return-void
+.end method

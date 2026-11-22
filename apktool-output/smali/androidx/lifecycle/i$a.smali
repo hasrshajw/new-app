@@ -1,0 +1,51 @@
+.class public final Landroidx/lifecycle/i$a;
+.super Lqi0;
+.source "r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/lifecycle/i;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lqi0;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object p0, Landroidx/lifecycle/q;->b:Landroidx/lifecycle/q$b;
+
+    .line 5
+    .line 6
+    invoke-virtual {p0, p1}, Landroidx/lifecycle/q$b;->c(Landroid/app/Activity;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method

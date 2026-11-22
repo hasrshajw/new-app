@@ -1,0 +1,14 @@
+package com.facebook.ads.internal.dynamicloading;
+
+import android.app.Activity;
+import android.app.Service;
+import com.facebook.ads.internal.api.AudienceNetworkExportedActivityApi;
+import com.facebook.ads.internal.api.AudienceNetworkRemoteServiceApi;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes.dex */
+public interface RemoteRenderingApi {
+    AudienceNetworkExportedActivityApi createAudienceNetworkExportedActivityApi(Activity activity);
+
+    AudienceNetworkRemoteServiceApi createAudienceNetworkRemoteService(Service service);
+}

@@ -1,0 +1,13 @@
+package defpackage;
+
+import android.accounts.Account;
+import android.os.Bundle;
+import android.os.IInterface;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes.dex */
+public interface u9c extends IInterface {
+    Bundle Y2(String str, Bundle bundle);
+
+    Bundle l4(Account account, String str, Bundle bundle);
+}

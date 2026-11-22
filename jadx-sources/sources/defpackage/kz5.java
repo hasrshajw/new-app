@@ -1,0 +1,17 @@
+package defpackage;
+
+import com.unity3d.services.UnityAdsConstants;
+
+/* JADX INFO: loaded from: classes3.dex */
+public class kz5 {
+    public float a(int i, int i2) {
+        if (i2 <= 0 || i <= 0) {
+            return UnityAdsConstants.SafeGuards.InitRequestRetryPolicy.MIN_JITTER_PCT;
+        }
+        float f = i / i2;
+        if (f > 1.0f) {
+            return 1.0f;
+        }
+        return f;
+    }
+}

@@ -1,0 +1,95 @@
+.class public final synthetic Lei3$a$a;
+.super Lna1;
+.source "r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lei3$a;->s(Landroid/content/Context;Lgi3;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1001
+    name = null
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 7
+
+    .line 1
+    const-string v5, "getNetworkProperties$posthog_android_release()Ljava/util/Map;"
+
+    .line 2
+    .line 3
+    const/4 v6, 0x0
+
+    .line 4
+    const/4 v1, 0x0
+
+    .line 5
+    const-class v3, Lqi3;
+
+    .line 6
+    .line 7
+    const-string v4, "getNetworkProperties"
+
+    .line 8
+    .line 9
+    move-object v0, p0
+
+    .line 10
+    move-object v2, p1
+
+    .line 11
+    invoke-direct/range {v0 .. v6}, Lna1;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b()Ljava/util/Map;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lap;->receiver:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    check-cast p0, Lqi3;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lqi3;->n()Ljava/util/Map;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lei3$a$a;->b()Ljava/util/Map;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method

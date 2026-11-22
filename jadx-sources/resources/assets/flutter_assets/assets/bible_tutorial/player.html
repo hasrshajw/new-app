@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="und">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; media-src file:; img-src file:; style-src 'unsafe-inline'; script-src file:; base-uri 'none'; form-action 'none'">
+  <style>
+    html, body, video { width: 100%; height: 100%; margin: 0; background: black; }
+    video { display: block; object-fit: contain; }
+  </style>
+  <script src="player.js" defer></script>
+</head>
+<body>
+  <video src="guide.mp4" poster="poster.jpg" preload="metadata" playsinline controls controlslist="nodownload noremoteplayback" disablepictureinpicture></video>
+</body>
+</html>

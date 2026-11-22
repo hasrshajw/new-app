@@ -1,0 +1,440 @@
+.class public final Lh5b$a;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lh5b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field public a:Lxfb;
+
+.field public b:Lm0i;
+
+.field public c:Ljava/lang/Integer;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput-object v0, p0, Lh5b$a;->a:Lxfb;
+
+    .line 6
+    .line 7
+    iput-object v0, p0, Lh5b$a;->b:Lm0i;
+
+    .line 8
+    .line 9
+    iput-object v0, p0, Lh5b$a;->c:Ljava/lang/Integer;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lx7b;)V
+    .locals 0
+
+    .line 12
+    invoke-direct {p0}, Lh5b$a;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Integer;)Lh5b$a;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lh5b$a;->c:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final b(Lxfb;)Lh5b$a;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lh5b$a;->a:Lxfb;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final c(Lm0i;)Lh5b$a;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lh5b$a;->b:Lm0i;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final d()Lh5b;
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lh5b$a;->a:Lxfb;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-eqz v0, :cond_8
+
+    .line 5
+    .line 6
+    iget-object v2, p0, Lh5b$a;->b:Lm0i;
+
+    .line 7
+    .line 8
+    if-eqz v2, :cond_8
+
+    .line 9
+    .line 10
+    invoke-virtual {v0}, Lxfb;->c()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    iget-object v2, p0, Lh5b$a;->b:Lm0i;
+
+    .line 15
+    .line 16
+    invoke-virtual {v2}, Lm0i;->a()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v2
+
+    .line 20
+    if-ne v0, v2, :cond_7
+
+    .line 21
+    .line 22
+    iget-object v0, p0, Lh5b$a;->a:Lxfb;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0}, Lpx9;->a()Z
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v0
+
+    .line 28
+    if-eqz v0, :cond_1
+
+    .line 29
+    .line 30
+    iget-object v0, p0, Lh5b$a;->c:Ljava/lang/Integer;
+
+    .line 31
+    .line 32
+    if-eqz v0, :cond_0
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    const-string p0, "Cannot create key without ID requirement with parameters with ID requirement"
+
+    .line 36
+    .line 37
+    invoke-static {p0}, Ld6d;->a(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
+    return-object v1
+
+    .line 41
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Lh5b$a;->a:Lxfb;
+
+    .line 42
+    .line 43
+    invoke-virtual {v0}, Lpx9;->a()Z
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v0
+
+    .line 47
+    if-nez v0, :cond_3
+
+    .line 48
+    .line 49
+    iget-object v0, p0, Lh5b$a;->c:Ljava/lang/Integer;
+
+    .line 50
+    .line 51
+    if-nez v0, :cond_2
+
+    .line 52
+    .line 53
+    goto :goto_1
+
+    .line 54
+    :cond_2
+    const-string p0, "Cannot create key with ID requirement with parameters without ID requirement"
+
+    .line 55
+    .line 56
+    invoke-static {p0}, Ld6d;->a(Ljava/lang/String;)V
+
+    .line 57
+    .line 58
+    .line 59
+    return-object v1
+
+    .line 60
+    :cond_3
+    :goto_1
+    iget-object v0, p0, Lh5b$a;->a:Lxfb;
+
+    .line 61
+    .line 62
+    invoke-virtual {v0}, Lxfb;->f()Lxfb$b;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v0
+
+    .line 66
+    sget-object v2, Lxfb$b;->d:Lxfb$b;
+
+    .line 67
+    .line 68
+    if-ne v0, v2, :cond_4
+
+    .line 69
+    .line 70
+    sget-object v0, Lwpg;->a:Ll0i;
+
+    .line 71
+    .line 72
+    :goto_2
+    move-object v4, v0
+
+    .line 73
+    goto :goto_3
+
+    .line 74
+    :cond_4
+    iget-object v0, p0, Lh5b$a;->a:Lxfb;
+
+    .line 75
+    .line 76
+    invoke-virtual {v0}, Lxfb;->f()Lxfb$b;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v0
+
+    .line 80
+    sget-object v2, Lxfb$b;->c:Lxfb$b;
+
+    .line 81
+    .line 82
+    if-ne v0, v2, :cond_5
+
+    .line 83
+    .line 84
+    iget-object v0, p0, Lh5b$a;->c:Ljava/lang/Integer;
+
+    .line 85
+    .line 86
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    .line 87
+    .line 88
+    .line 89
+    move-result v0
+
+    .line 90
+    invoke-static {v0}, Lwpg;->a(I)Ll0i;
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-object v0
+
+    .line 94
+    goto :goto_2
+
+    .line 95
+    :cond_5
+    iget-object v0, p0, Lh5b$a;->a:Lxfb;
+
+    .line 96
+    .line 97
+    invoke-virtual {v0}, Lxfb;->f()Lxfb$b;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object v0
+
+    .line 101
+    sget-object v2, Lxfb$b;->b:Lxfb$b;
+
+    .line 102
+    .line 103
+    if-ne v0, v2, :cond_6
+
+    .line 104
+    .line 105
+    iget-object v0, p0, Lh5b$a;->c:Ljava/lang/Integer;
+
+    .line 106
+    .line 107
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    .line 108
+    .line 109
+    .line 110
+    move-result v0
+
+    .line 111
+    invoke-static {v0}, Lwpg;->b(I)Ll0i;
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-object v0
+
+    .line 115
+    goto :goto_2
+
+    .line 116
+    :goto_3
+    new-instance v1, Lh5b;
+
+    .line 117
+    .line 118
+    iget-object v2, p0, Lh5b$a;->a:Lxfb;
+
+    .line 119
+    .line 120
+    iget-object v3, p0, Lh5b$a;->b:Lm0i;
+
+    .line 121
+    .line 122
+    iget-object v5, p0, Lh5b$a;->c:Ljava/lang/Integer;
+
+    .line 123
+    .line 124
+    const/4 v6, 0x0
+
+    .line 125
+    invoke-direct/range {v1 .. v6}, Lh5b;-><init>(Lxfb;Lm0i;Ll0i;Ljava/lang/Integer;Lx7b;)V
+
+    .line 126
+    .line 127
+    .line 128
+    return-object v1
+
+    .line 129
+    :cond_6
+    iget-object p0, p0, Lh5b$a;->a:Lxfb;
+
+    .line 130
+    .line 131
+    invoke-virtual {p0}, Lxfb;->f()Lxfb$b;
+
+    .line 132
+    .line 133
+    .line 134
+    move-result-object p0
+
+    .line 135
+    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 136
+    .line 137
+    .line 138
+    move-result-object p0
+
+    .line 139
+    const-string v0, "Unknown AesGcmParameters.Variant: "
+
+    .line 140
+    .line 141
+    invoke-virtual {v0, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 142
+    .line 143
+    .line 144
+    move-result-object p0
+
+    .line 145
+    invoke-static {p0}, Lhn4;->a(Ljava/lang/String;)V
+
+    .line 146
+    .line 147
+    .line 148
+    return-object v1
+
+    .line 149
+    :cond_7
+    const-string p0, "Key size mismatch"
+
+    .line 150
+    .line 151
+    invoke-static {p0}, Ld6d;->a(Ljava/lang/String;)V
+
+    .line 152
+    .line 153
+    .line 154
+    return-object v1
+
+    .line 155
+    :cond_8
+    const-string p0, "Cannot build without parameters and/or key material"
+
+    .line 156
+    .line 157
+    invoke-static {p0}, Ld6d;->a(Ljava/lang/String;)V
+
+    .line 158
+    .line 159
+    .line 160
+    return-object v1
+.end method

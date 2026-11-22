@@ -1,0 +1,12 @@
+package defpackage;
+
+import android.graphics.Typeface;
+import android.graphics.fonts.FontFamily;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract /* synthetic */ class ye5 {
+    public static /* synthetic */ Typeface.CustomFallbackBuilder a(FontFamily fontFamily) {
+        return new Typeface.CustomFallbackBuilder(fontFamily);
+    }
+}

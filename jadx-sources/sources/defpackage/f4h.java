@@ -1,0 +1,9 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class f4h {
+    public static /* synthetic */ void a(Object obj, Object obj2, Object obj3, Throwable th) {
+        throw new RuntimeException("Field " + obj + ((Object) " for ") + obj2 + ((Object) " not found. Known fields are ") + obj3, th);
+    }
+}

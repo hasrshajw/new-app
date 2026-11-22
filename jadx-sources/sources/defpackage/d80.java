@@ -1,0 +1,15 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes3.dex */
+public enum d80 {
+    FILE_SIZE_LIMIT_REACHED,
+    APPEND_EVENT_EXCEPTION,
+    DESERIALIZATION_ERROR,
+    FLUSH_ERROR,
+    FLUSH_STARTED,
+    FLUSH_COMPLETED,
+    FLUSH_SKIPPED_NO_EVENTS,
+    REMOVE_LINES_EXCEPTION,
+    APP_BACKGROUNDED
+}

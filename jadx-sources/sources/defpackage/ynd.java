@@ -1,0 +1,12 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes.dex */
+public enum ynd {
+    RESULT_UNKNOWN,
+    RESULT_NOOP_LOCAL_PROGRAM_STILL_VALID,
+    RESULT_UPDATED,
+    RESULT_NOOP_NO_NEW_PROGRAM,
+    RESULT_FAILURE_INVALID_RESPONSE,
+    RESULT_FAILURE_FETCHER_HTTP_RUNTIME_EXCEPTION
+}

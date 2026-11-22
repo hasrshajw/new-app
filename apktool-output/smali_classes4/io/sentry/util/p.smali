@@ -1,0 +1,25 @@
+.class public abstract Lio/sentry/util/p;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213"
+
+
+# direct methods
+.method public static a(Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lio/sentry/m5;->d()Lio/sentry/m5;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0, p0}, Lio/sentry/m5;->a(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method

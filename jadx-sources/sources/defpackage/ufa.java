@@ -1,0 +1,27 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes.dex */
+public final class ufa {
+    public final wpc a;
+    public final lpc b;
+    public final ywb c;
+
+    public ufa(wpc wpcVar, lpc lpcVar, ywb ywbVar) {
+        this.a = wpcVar;
+        this.b = lpcVar;
+        this.c = ywbVar;
+    }
+
+    public final wpc a() {
+        return this.a;
+    }
+
+    public final lpc b() {
+        return this.b;
+    }
+
+    public final ywb c() {
+        return this.c;
+    }
+}

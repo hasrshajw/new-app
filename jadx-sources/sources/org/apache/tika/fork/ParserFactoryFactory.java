@@ -1,0 +1,27 @@
+package org.apache.tika.fork;
+
+import java.io.Serializable;
+import java.util.Map;
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.parser.ParserFactory;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes4.dex */
+public class ParserFactoryFactory implements Serializable {
+    private static final long serialVersionUID = 4710974869988895410L;
+    private final Map<String, String> args;
+    private final String className;
+
+    public ParserFactoryFactory(String str, Map<String, String> map) {
+        this.className = str;
+        this.args = map;
+    }
+
+    public ParserFactory build() throws TikaException {
+        try {
+            return (ParserFactory) Class.forName(this.className).getConstructor(Map.class).newInstance(this.args);
+        } catch (IllegalStateException | ReflectiveOperationException e) {
+            throw new TikaException("Couldn't create factory", e);
+        }
+    }
+}

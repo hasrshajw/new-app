@@ -1,0 +1,24 @@
+package com.unity3d.ads.core.data.model;
+
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes3.dex */
+public abstract class OfferwallShowEvent {
+
+    /* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+    public static final class Show extends OfferwallShowEvent {
+        public static final Show INSTANCE = new Show();
+
+        private Show() {
+            super(null);
+        }
+    }
+
+    private OfferwallShowEvent() {
+    }
+
+    public /* synthetic */ OfferwallShowEvent(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+}

@@ -1,0 +1,102 @@
+.class public final Lcom/amazon/device/drm/a/b/a;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213"
+
+# interfaces
+.implements Lcom/amazon/device/drm/a/b;
+
+
+# static fields
+.field private static final a:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Class;",
+            "Ljava/lang/Class;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/util/HashMap;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/amazon/device/drm/a/b/a;->a:Ljava/util/Map;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/amazon/device/drm/a/c;
+
+    .line 9
+    .line 10
+    const-class v2, Lcom/amazon/device/drm/a/b/c;
+
+    .line 11
+    .line 12
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Class;)Ljava/lang/Class;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Class<",
+            "TT;>;)",
+            "Ljava/lang/Class<",
+            "TT;>;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object p0, Lcom/amazon/device/drm/a/b/a;->a:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Ljava/lang/Class;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method

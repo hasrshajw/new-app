@@ -1,0 +1,63 @@
+.class public Lci4;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213"
+
+# interfaces
+.implements Ljava/util/concurrent/Executor;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lci4$a;
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/util/concurrent/Executor;
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/concurrent/Executor;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lci4;->a:Ljava/util/concurrent/Executor;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public execute(Ljava/lang/Runnable;)V
+    .locals 1
+
+    .line 1
+    iget-object p0, p0, Lci4;->a:Ljava/util/concurrent/Executor;
+
+    .line 2
+    .line 3
+    new-instance v0, Lci4$a;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p1}, Lci4$a;-><init>(Ljava/lang/Runnable;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-interface {p0, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method

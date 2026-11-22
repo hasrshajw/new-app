@@ -1,0 +1,17 @@
+package org.apache.tika.exception;
+
+/* JADX INFO: compiled from: r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213 */
+/* JADX INFO: loaded from: classes4.dex */
+public class TikaMemoryLimitException extends TikaException {
+    public TikaMemoryLimitException(long j, long j2) {
+        super(msg(j, j2));
+    }
+
+    public TikaMemoryLimitException(String str) {
+        super(str);
+    }
+
+    private static String msg(long j, long j2) {
+        return "Tried to allocate " + j + " bytes, but " + j2 + " is the maximum allowed. Please open an issue https://issues.apache.org/jira/projects/TIKA if you believe this file is not corrupt.";
+    }
+}

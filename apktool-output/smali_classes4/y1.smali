@@ -1,0 +1,53 @@
+.class public final synthetic Ly1;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6b89febe631f49841eef2d435f986cf08e8b77ec993d122b549cff08c1fb213"
+
+# interfaces
+.implements Ljava/util/function/Predicate;
+
+
+# instance fields
+.field public final synthetic a:Lio/flutter/view/a$p;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lio/flutter/view/a$p;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Ly1;->a:Lio/flutter/view/a$p;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final test(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Ly1;->a:Lio/flutter/view/a$p;
+
+    .line 2
+    .line 3
+    check-cast p1, Lio/flutter/view/a$p;
+
+    .line 4
+    .line 5
+    invoke-static {p0, p1}, Lio/flutter/view/a;->a(Lio/flutter/view/a$p;Lio/flutter/view/a$p;)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p0
+
+    .line 9
+    return p0
+.end method
